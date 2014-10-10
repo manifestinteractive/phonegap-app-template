@@ -1,0 +1,6 @@
+# Fixes for Browser Testing outside of Native Devices
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+RewriteEngine On
+Redirect 301 /cordova.js /assets/js/cordova.fake.js

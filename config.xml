@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id = "com.manifestinteractive.myapp"
+        version = "0.1.0"
+        xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+    <name>MyApp</name>
+
+    <description>
+        100% Open Source iOS &amp; Android App to locate those you can't seem to find, even though they were right next to you. ( True 3D Location Tracking )
+    </description>
+
+    <author href="http://manifestinteractive.com" email="hello@manifestinteractive.com">
+        Manifest Interactive
+    </author>
+
+    <!-- Global Preferences -->
+    <preference name="phonegap-version" value="3.5.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="BackgroundColor" value="0xff595a5c" />
+    <preference name="AutoHideSplashScreen" value="false" />
+
+    <!-- iOS Specific Preferences -->
+    <platform name="ios">
+        <preference name="ShowSplashScreenSpinner" value="true" />
+        <preference name="DisallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="target-device"  value="universal" />
+        <preference name="deployment-target" value="7.0" />
+        <preference name="SuppressesIncrementalRendering" value="true" />
+        <preference name="prerendered-icon" value="true" />
+        <preference name="BackupWebStorage" value="local" />
+    </platform>
+
+    <!-- Android Specific Preferences -->
+    <platform name="android">
+        <preference name="android-minSdkVersion" value="19" />
+        <preference name="disallowOverscroll" value="true" />
+        <preference name="webviewbounce" value="false" />
+        <preference name="SplashScreen" value="screen" />
+        <preference name="SplashScreenDelay" value="7000" />
+    </platform>
+
+    <!-- Plugins -->
+
+    <!-- Core plugins -->
+    <!-- ================================================== -->
+
+    <!-- Device Info ( describes the device's hardware and software ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/628 -->
+    <gap:plugin name="org.apache.cordova.device" version="0.2.8" />
+
+    <!-- Notification ( support for alerts, confirmations, prompts & beeps ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/622 -->
+    <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+
+    <!-- Globalization ( language support ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/614 -->
+    <gap:plugin name="org.apache.cordova.globalization" />
+
+    <!-- In App Browser ( Needed to Even Launch Default Browser ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/658 -->
+    <gap:plugin name="org.apache.cordova.inappbrowser" />
+
+    <!-- Network Information ( information about the device's cellular and wifi connection ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/626 -->
+    <gap:plugin name="org.apache.cordova.network-information" version="0.2.7" />
+
+    <!-- Splash Screen ( control splash screen ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/620 -->
+    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
+
+    <!-- Third party plugins -->
+    <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
+    <!-- ================================================== -->
+
+    <!-- Status Bar ( control status bar ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/505 -->
+    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+
+    <!-- Custom URL Scheme Support ( myapp:// ) -->
+    <!-- Documentation: https://build.phonegap.com/plugins/844 -->
+    <gap:plugin name="nl.x-services.plugins.launchmyapp" version="3.2.0">
+        <param name="URL_SCHEME" value="myapp" />
+    </gap:plugin>
+
+    <access origin="*" />
+
+</widget>

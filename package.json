@@ -1,0 +1,32 @@
+{
+  "name": "PhoneGapAppTemplate",
+  "description": "PhoneGap App Template",
+  "homepage": "https://github.com/manifestinteractive/phonegap-app-template",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manifestinteractive/phonegap-app-template.git#stable"
+  },
+  "author": {
+    "name": "Manifest Interactive, LLC,",
+    "email": "hello@manifestinteractive.com",
+    "url": "http://manifestinteractive.com"
+  },
+  "bugs": {
+    "url": "https://github.com/manifestinteractive/phonegap-app-template/issues",
+    "email": "hello@manifestinteractive.com"
+  },
+  "dependencies": {
+      "cordova": ">=3",
+      "phonegap": ">=3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-concat": "*",
+	"grunt-contrib-sass": "*",
+    "jshint-stylish": "^0.4.0"
+  }
+}

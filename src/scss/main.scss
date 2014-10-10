@@ -1,0 +1,98 @@
+@import "variables";
+@import "bourbon/bourbon";
+@import "animate/animate";
+@import "reset";
+@import "trunk";
+@import "home";
+@import "about";
+@import "devlog";
+@import "tour";
+
+html, body
+{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.animated
+{
+ 	@include animate-prefixer(animation-duration, $base-duration);
+ 	@include animate-prefixer(animation-fill-mode, both);
+}
+.devonly
+{
+    visibility: hidden;
+}
+
+.panel
+{
+    display: none;
+    padding: 20px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+    &.active
+    {
+        display: block;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #FFF;
+    }
+    h3 {
+        font-size:20px;
+        font-weight:normal;
+        margin:0px;
+        overflow:visible;
+        padding:0px;
+        text-align:center;
+        color: #FFF;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    ul {
+        max-width: 300px;
+        margin: 0 auto;
+        color: #FFF
+    }
+}
+
+.dev
+{
+    background-image: url(../img/dev.png);
+    width: 52px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.dev-enable
+{
+    background-color: transparent;
+    width: 52px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-section
+{
+    height: 60px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+.push-header
+{
+    margin-top: 60px;
+}
